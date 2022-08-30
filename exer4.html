@@ -81,9 +81,44 @@
             width: 100px;
             margin-right: 5px;
         }
+        .flex-white {
+            background-color: white;
+            height: 50px;
+            width: 50px;
+        }
+        #flex-green {
+            background-color: #7FBF1F;
+            height: 200px;
+            width: 75px;
+            margin-left: 5px;
+        }
+        .flex-grey {
+            background-color: #D9D9D9;
+            height: 50px;
+            width: 50px;
+            margin-left: 5px;
+        }
+        #flex-blueSecond {
+            background-color: #D9D9D9;
+            height: 140px;
+            width: 100px;
+        }
+        #flex-purple {
+            background-color: #BE4BDB;
+            height: 140px;
+            width: 50px;
+            margin-left: 5px;
+        }
+        .flex-red {
+            background-color: #D9487D;
+            height: 140px;
+            width: 50px;
+            margin-left: 85px;
+        }
         .row {
             display: flex;
             justify-content: row;
+            max-height: 60px;
         }
     </style>
 </head>
@@ -109,7 +144,13 @@
             <div class="row">
                 <div style="background-color:#F26716;" id="flex-blue"></div>
                 <div class="flex-white"></div>
-
+                <div id="flex-green"></div>
+                <div class="flex-grey"></div>
+            </div>
+            <div class="row">
+                <div id="flex-blueSecond"></div>
+                <div id="flex-purple"></div>
+                <div class="flex-red"></div>
             </div>
         </div>
     </div>
