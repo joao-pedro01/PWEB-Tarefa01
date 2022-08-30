@@ -4,101 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BootCamp FullStack Iniciante - Assinatura</title>
+    <title>Document</title>
     <style>
         /* 
-            HEX : #fefeff
+            HEX : #FEFEFF
             HEX : #D9D9D9
-            HEX : #ff9af6
+            HEX : #FF9AF6
             HEX : #BFF272
             HEX : #94A2F2
+            HEX : #F27272
         */
         * {
-            font-size: larger;
-        }
-        body {
-            background-color: aliceblue;
-            color: white;
-        }
-        .content {
-            display: flex;
-            justify-content: left;
-            width: 40%;
-            height: 900%;
-            margin: auto;
-            background-color: #D9D9D9;
-        }
-        .flex-red {
-            display: flex;
             justify-content: center;
             align-items: center;
-            width: 30px;
-            height: 30px;
-            margin: 10px;
-            background-color: #FE7676;
+            font-size: 2rem;
+            color: white;
+        }
+        body {
+            display: flex;
+            width: auto;
+            height: 900px;
+        }
+        .conteiner {
+            display: flex;
+            flex-flow: row wrap;
+            margin: auto;
+            background-color:  #D9D9D9;
+            width: 40%;
+            height: 80%;
+            padding: 4rem;
         }
         .flex-green {
             display: flex;
-            background-color: greenyellow;
-            width: 98%;
-            height: 30%;
-            margin: 10px;
-            color: aliceblue;
-            align-items: center;
-            justify-content: center;
+            background-color: #BFF272;
+            width: 100%;
+            height: 20%;
+        }
+        .flex-red {
+            display: flex;
+            background-color: #F27272;
+            width: 50%;
+            height: 95%;
+            margin-right: 5px;
         }
         .flex-pink {
             display: flex;
-            background-color: #ff9af6;
-            height: 55%;
-            width: 60%;
-            margin-left: 10px;
-            color: aliceblue;
-            align-items: center;
-            justify-content: center;
+            background-color: #FF9AF6;
+            width: 50%;
+            height: 95%;   
+        }
+        .flex-blue {
+            display: flex;
+            background-color: #94A2F2;
+            width: 100%;
+            height: 20%;
+        }
+        .flex-blue:first-child {
+            margin-bottom: 20px;
         }
         .flex-content {
             display: flex;
-            flex-flow: row wrap;
-            width: 60%;
+            flex-direction: column;
+            margin-top: -6.2rem;
+            width: 100%;
+            height: 100%;
         }
-        .second-content {
-               width: 34%;
-            height: 55%;
-            margin-left: 10px;
+        .flex-contentSecond {
+            display: flex;
+            margin-top: 10px;
+            width: 100%;
+            height: 20%;
         }
-        .second-flex {
-            background-color: #94A2F2;
-            height: 40%;
-        }
-        .second-flex:first-child {
-            margin-top: 8px;
-            margin-bottom: 20px;
-        }
-
     </style>
 </head>
 <body>
-    <div class="content">
-        <div class="flex-green">
-            2
+   <div class="conteiner">
+        <div class="flex-green">2</div>
+        <div class="flex-contentSecond">
+            <div class="flex-red">1</div>
+            <div class="flex-pink">3</div>
         </div>
         <div class="flex-content">
-            <div class="flex-red">
-                1
-            </div>
-            <div class="flex-pink">
-                3
-            </div>
-            <div class="second-content">
-                <div class="second-flex">
-                    4a
-                </di    v>
-                <div class="second-flex">
-                    4b
-                </div>
-            </div>
+            <div class="flex-blue">4a</div>
+            <div class="flex-blue">4b</div>
         </div>
-    </div>
+   </div>
 </body>
-</html> 
+</html>
