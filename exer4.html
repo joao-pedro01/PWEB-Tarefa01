@@ -5,8 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: blueviolet;
+            max-width: 680px;
+            max-height: 320px;
+            margin: auto;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 8px;
+        }
+        .content {
+            width: 150px;
+            height: 350px;
+        }
+        .content:last-child {
+            width: 350px;
+        }
+        .flex-blue:first-child {
+            background-color: #15AABF;
+        }
+        .flex-blue {
+            margin-bottom: 10px;
+            background-color: #228BE6;
+            height: 50px;
+        }
+        .flex-purple {
+            background-color: #BE4BDB;
+            height: 200px;
+        }
+        .flex-orange:first-child {
+            height: 100%;
+            width: 100%;
+        }
+        .flex-orange {
+            background-color: #F26716;
+        }
+        #flex-orange {
+            height: 50px;
+            width: 175px;
+            margin-bottom: 8px;
+        }
+        .flex-blueSecond {
+            margin-bottom: 10px;
+            background-color: #228BE6;
+            height: 50px;
+            max-width: 100px;
+        }
+        .flex-orangeSecond {
+            background-color: #F26716;
+            max-width: 100px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        #flex-blue {
+            background-color: #4C6EF5;
+            height: 140px;
+            max-width: 100px;
+        }
+        .flex-pink {
+            background-color: #D9487D;
+            width: 170px;
+            height: 50px;
+        }
+        .flex-green {
+            background-color: #7FBF1F;
+            width: 200px;
+            height: 50px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="content">
+            <div class="flex-blue"></div>
+            <div class="flex-blue"></div>
+            <div class="flex-purple"></div>
+        </div>
+        <div class="content">
+            <div class="flex-orange"></div>
+        </div>
+        <div class="content">
+            <div class="flex-orange" id="flex-orange"></div>
+            <div class="flex-pink"></div>
+            <div class="flex-blueSecond"></div>
+            <div class="flex-orangeSecond"></div>
+            <div class="flex-green"></div>
+        </div>
+    </div>
 </body>
 </html>
