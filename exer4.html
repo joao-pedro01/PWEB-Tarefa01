@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,9 +75,15 @@
             width: 200px;
             height: 50px;
         }
+        #flex-blue {
+            background-color: #15AABF;
+            height: 50px;
+            width: 100px;
+            margin-right: 5px;
+        }
         .row {
             display: flex;
-            column: row;
+            justify-content: row;
         }
     </style>
 </head>
@@ -92,14 +99,18 @@
         </div>
         <div class="content">
             <div class="row">
-                <div class="flex-orange" id="flex-orange"></div>
+                <div style="margin-right: 5px;" class="flex-orange" id="flex-orange"></div>
                 <div class="flex-pink"></div>
             </div>
             <div class="row">
-                <div class="flex-blueSecond"></div>
-                <div class="flex-orangeSecond"></div>
+                <div id="flex-blue"></div>
+                <div class="flex-green" id="flex-orange"></div>
             </div>
-            <div class="flex-green"></div>
+            <div class="row">
+                <div style="background-color:#F26716;" id="flex-blue"></div>
+                <div class="flex-white"></div>
+
+            </div>
         </div>
     </div>
 </body>
