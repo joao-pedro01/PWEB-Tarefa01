@@ -74,6 +74,10 @@
             width: 200px;
             height: 50px;
         }
+        .row {
+            display: flex;
+            column: row;
+        }
     </style>
 </head>
 <body>
@@ -87,10 +91,14 @@
             <div class="flex-orange"></div>
         </div>
         <div class="content">
-            <div class="flex-orange" id="flex-orange"></div>
-            <div class="flex-pink"></div>
-            <div class="flex-blueSecond"></div>
-            <div class="flex-orangeSecond"></div>
+            <div class="row">
+                <div class="flex-orange" id="flex-orange"></div>
+                <div class="flex-pink"></div>
+            </div>
+            <div class="row">
+                <div class="flex-blueSecond"></div>
+                <div class="flex-orangeSecond"></div>
+            </div>
             <div class="flex-green"></div>
         </div>
     </div>
